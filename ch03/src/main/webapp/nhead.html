@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+* { padding:0; margin: 0 }
+
+.header				{ width:630px; height:100px; margin:50px auto; }
+.header .logo,
+.header .search-box { float: left}
+.header .logo		{ font-size: 0; text-indent: 110%; overflow: hidden; width:222px; height:52px; background: url('/ch03/images/naver-splite.png') no-repeat 0 -158px; background-size: 440px 408px; }
+
+.search-box	{ width:400px; height:50px; margin-left: 20px; border:3px solid #19CE60; width:380px; height:45px }
+
+.search-box input, .search-box a	{ display:block }
+.search-box a,
+.search-box input,
+.search-box .btn-search				{ float:right }
+.search-box a, .btn-search button	{ font-size:0; text-indent: 110%; }
+
+.search-box input 				{ float: left; width:260px; padding:13px 5px; border: none; font-size:16px; font-weight: bold; outline: none; }
+.search-box #keyboard 			{ width: 20px; height: 12px; margin: 15px 10px 0 0; background-image: url('/ch03/images/naver-splite.png'); background-position: -420px -267px; background-repeat: no-repeat; background-size: 440px 408px; }
+.search-box #dropdown 			{ width: 10px; height: 5px; margin: 20px 10px 0 0; background-image: url('/ch03/images/naver-splite.png'); background-position: -170px -151px; background-repeat: no-repeat; background-size: 440px 408px; }
+.search-box .btn-search			{ width: 45px; height: 45px; background-color: #19CE60; }
+.search-box .btn-search button	{ display:block;border: none; width: 22px; height: 22px; display: block; margin: 10px auto; background: #19CE60 url('/ch03/images/naver-splite.png') no-repeat 0 -386px; background-size: 440px 408px; }
+
+
+  	
+</style>
+</head>
+<body>
+	<div class="header">
+		<h1 class="logo">네이버</h1>
+		<div class="search-box">	
+			<div class="btn-search">
+				<button>돋보기</button>
+			</div>
+			<a href="#" id="dropdown">드롭다운</a>
+			<a href="#" id="keyboard">키보드</a>
+			<input type="text" />
+		</div>
+	</div>
+</body>
+</html>

@@ -12,24 +12,24 @@ body {
 
 
 ul.bullet {
+	position:absolute;
+	top:100px;
+	left:200px;
 	list-style-type:none;
 	margin:10px 0 0 0;
 	padding:0;
-	border:1px solid #999;
-	border-radius:10px;
+	border:1px solid #999; /* 행 나누기 */
+	border-radius:10px; /* 모서리 둥글게 */
 	width:300px;
+	background: url(images/back2.gif) no-repeat 0 33px;
 
 }
 
 ul.bullet li {
-	width:250px;
-	height:40px;
-	margin:10px 0 0 0;
-	padding:0 0 0 30px;
-	border:0px solid #555;
-	background-image: url(images/bullet1.gif);
-	background-repeat: no-repeat;
-	background-position: 10px top;	
+	width:270px;
+	border:0px solid #999;
+	padding: 5px 0 5px 17px;
+	background: url('images/bullet1.gif') no-repeat 0 0;
 	
 }
 
@@ -37,15 +37,18 @@ ul.bullet li {
 </head>
 
 <body>
-<ul  class="bullet">
-    <li> 1. 리스트의 bullet 을 백그라운드로 사용가능합니다.</li>
-    <li> 2. 리스트의 bullet 을 백그라운드로 사용가능합니다.</li>
-    <li> 3. 리스트의 bullet 을 백그라운드로 사용가능합니다.</li>
-    <li> 4. 리스트의 bullet 을 백그라운드로 사용가능합니다.</li>
-    <li> 5. 리스트의 bullet 을 백그라운드로 사용가능합니다.</li>
-    <li> 6. 리스트의 bullet 을 백그라운드로 사용가능합니다.</li>
+<ul  class="bullet" style="z-index:201;">
+    <li>리스트의 bullet 을 백그라운드로 사용가능합니다.</li>
+    <li>리스트의 bullet 을 백그라운드로 사용가능합니다.</li>
+    <li>리스트의 bullet 을 백그라운드로 사용가능합니다.</li>
+    <li>리스트의 bullet 을 백그라운드로 사용가능합니다.</li>
+    <li>리스트의 bullet 을 백그라운드로 사용가능합니다.</li>
+    <li>리스트의 bullet 을 백그라운드로 사용가능합니다.</li>
 </ul>
 
+<div style="z-index:200; position:absolute; left:100px; top:100px; width:200px; height:100px; background-color: #00f">
+	박스입니다.
+</div>
 
 </body>
 </html>
