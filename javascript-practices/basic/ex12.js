@@ -39,4 +39,9 @@ var f = function(){
 // f();
 
 o = {name : "me!"};
+/* 
+call , apply 차이점
+call 바인딩 해주고 파라미터를 넘겨주고 
+aplly는 파라미터가 없을떄 매개변수를 배열 형태로 넣어준다.
+*/
 f.call(o);

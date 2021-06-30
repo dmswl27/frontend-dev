@@ -34,6 +34,6 @@ console.log("=================================================");
 // 추천
 // 엄격하게 형변환을 헤서 두 피연산자의 타입을 맞춘다.
 var str = "5";
-console.log(parseInt(str) == 5);
+console.log(parseInt(str) === 5);
 
 

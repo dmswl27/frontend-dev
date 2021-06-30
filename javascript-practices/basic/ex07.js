@@ -18,3 +18,5 @@ var o2 = new MyObject("마이콜",20);
 
 console.log(o1);
 console.log(o2);
+
+

@@ -43,7 +43,7 @@ var sum = function(){
     // for(var i =0; i<arguments.length; i++){
     //     s += arguments[i];
     // }
-    
+
     // 구현 2 (Array.prototype.forEach + caller 바꾸기)
     Array.prototype.forEach.call(arguments, function(e){
         s +=e;

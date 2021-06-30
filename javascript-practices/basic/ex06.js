@@ -51,6 +51,7 @@ console.log("===============================");
 /* XmlHttpRequest 호스트 객체(부라우저)를 사용해서 통신 */
 var response = '{name: "둘리", age:10, email:"dooly@nqver.com"}'
 var userVo = eval("(" + response + ")");
+console.log(userVo);
 console.log(userVo.name + ":" + userVo.email);
 
 console.log("===============================");
