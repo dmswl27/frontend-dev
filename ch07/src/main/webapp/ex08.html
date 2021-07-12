@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery/jquery-3.6.0.js"></script>
+<script>
+$(function(){
+	setTimeout(function(){
+		$(".item strong").css("font-weight", "normal")
+	}, 1000);
+});
+</script>
+</head>
+<body>
+	<h1>선택자 - 하위</h1>
+	<ul>
+		<li class="item"><strong>텍스트 텍스트 텍스트 텍스트 텍스트</strong></li>
+		<li class="item"><strong>텍스트 텍스트 텍스트 텍스트 텍스트</strong></li>
+		<li class="item"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+		<li class="item"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+	</ul>
+</body>
+</html>

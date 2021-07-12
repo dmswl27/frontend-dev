@@ -53,7 +53,7 @@ const dooly = {
     printFriends:function(){
         this.friends.forEach(friend => {
             console.log(`${this.name}의 친구 ${friend}`);
-        }
+        });
     }
 }
 dooly.printFriends();

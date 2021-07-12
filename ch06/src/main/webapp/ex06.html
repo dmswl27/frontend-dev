@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+window.addEventListener("load", function(){
+	const h1Element = document.createElement("h1");
+	const textNode = document.createTextNode("Hello DOM");
+	
+	h1Element.append(textNode);
+	
+	setTimeout(function(){
+		document.body.appendChild(h1Element);
+	},2000);
+});
+</script>
+</head>
+<body>
+	<h1>HTMLElement(DOM Tree Node) 추가하기1</h1>
+</body>
+</html>

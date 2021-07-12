@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery/jquery-3.6.0.js"></script>
+<script>
+
+$(function() {
+	const $obj = $(".par");
+	
+	console.log($obj.length);
+	console.log(typeof($obj) + ":" + ($obj instanceof Array));  // 배열이 아니라 유사 배열
+	console.log($obj[0]); // jQuery가 아니다. HTMLElement이다.
+	console.log($obj.get(0)); // jQuery가 아니다. HTMLElement이다.
+	
+	$obj.css('color', 'red');
+	$obj.click(function() {
+		// 이벤트 핸들러에서 this는 jQuery Object가 아닌 HTMLElement이다.
+		console.log("clicked:" + this);
+		
+// 		var $obj = $(this);
+// 		$obj.css("text-decoration", "underline");
+// 		$obj.text("클릭!");
+		
+		/*
+		
+		*/
+		$(this).css("text-decoration", "underline").text("클릭!");
+
+	})
+});
+
+
+</script>
+</head>
+<body>
+	<h1 id="header">jQuery object</h1>
+	<p class="par">문장1</p>
+	<p>문장2</p>
+	<p class="par">문장3</p>
+	<p>문장3</p>
+</body>
+</html>

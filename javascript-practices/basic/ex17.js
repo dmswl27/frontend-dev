@@ -1,4 +1,8 @@
+/*
+1. apply, call 호출과 동시에 this Binding
+2. 비동기 callback 함수에서 this binding 
 
+*/
 console.log("=======global=======");
 
 var email = "dooly@gmail.com"

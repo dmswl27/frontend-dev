@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+window.addEventListener("load", function(){
+	const imgElement = document.createElement("img");
+	
+	//(표준 + 비표준)
+	imgElement.setAttribute("src", "");
+	imgElement.setAttribute("style","width =200px");
+	imgElement.setAttribute("alt","둘리");
+	imgElement.setAttribute("title","둘리");
+	imgElement.setAttribute("data-no" , 10);
+	setTimeout(function(){
+		document.body.appendChild(imgElement);
+	},2000);
+});
+</script>
+</head>
+<body>
+	<h1>HTMLElement(DOM Tree Node) 속성 조작하기</h1>
+</body>
+</html>

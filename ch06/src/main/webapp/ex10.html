@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+window.addEventListener("load", function(){
+	//1. ID로 가져오기
+	let header01 = document.getElementById("header-01");
+	let header01 = document.getElementById("header-02");
+	//2. tag name으로 가져오기
+	let h3s = document.getElementsByTagName("h3");
+	//3. class name으로 가져오기
+	//4. css 선택자로 가져오기
+	
+	setTimeout(function(){
+		header01.innerText = "by getElementId()" ; 
+		header02.innerText = "by getElementId()" ;
+		
+		h3s[0].innerText = "getElementsByTagName";
+	},2000);
+});
+</script>
+</head>
+<body>
+	<h1>HTMLElement(DOM Tree Node) 가져오기(탐색)</h1>
+	<h2 id="header-01">Header 01😎</h2>?
+	<h2 id="header-01">😘Header 02😎</h2>
+	
+	<h3>Header 03</h3>
+	<h3>Header 04</h3>
+	
+	<h4>✌✌✌✌✌✌✌✌✌✌✌✌✌✌✌✌</h4>
+	<h4>✌✌✌✌✌✌✌✌✌✌✌✌✌✌✌✌</h4>
+	
+</body>
+</html>

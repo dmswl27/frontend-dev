@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery/jquery-3.6.0.js"></script>
+<script>
+$(function(){
+	setTimeout(function(){
+		$("#second + li").css({
+			color: "#f00",
+			fontSize: "2.0em",
+			fontWeight: "bold"
+		});
+		
+		$("#second + li + li").css("color", "blue");
+	}, 2000);
+});
+</script>
+</head>
+<body>
+	<h1>선택자 - 인접(Sibling, 형제)</h1>
+	<ul>
+		<li>텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li id="second"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+		<li>텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+	</ul>
+</body>
+</html>

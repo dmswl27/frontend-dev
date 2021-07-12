@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="./jquery/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+$(function(){
+    setTimeout(() => {
+        $("#p2 strong").appendTo("#p1");
+    }, 1000);
+});
+</script>
+</head>
+<body>
+    <h1> DOM 조작 API - appendTo </h1>
+    <p id="p1">qwertyuiop</p>
+    <p id="p2">abcdefghijk<strong>ABCD</strong></p>
+</body>
+</html>

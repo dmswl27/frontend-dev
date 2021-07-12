@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery/jquery-3.6.0.js"></script>
+<script>
+
+$(function() {
+	const $obj = $(".par");
+	$obj.click(function(){
+		console.log("clicked:" + this);
+		// $(this).css("text-decoration", "underline");
+	});
+	setTimeout(function(){
+		$obj.css("color", "red");
+	}, 1000);
+});
+
+
+</script>
+</head>
+<body>
+	<h1 id="header">sumple jQuery 만들기1</h1>
+	<p class="par">문장1</p>
+	<p>문장2</p>
+	<p class="par">문장3</p>
+	<p>문장3</p>
+</body>
+</html>

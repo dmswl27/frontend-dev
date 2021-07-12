@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+/*
+ 용어정리
+ 
+ 1. 태그(tag)
+    - HTML문서 안에서 텍스트나, 콘텐츠를 정의할 때 사용하는 마크업언어이다.
+ 2. 문서객체(Document Object)
+    - DOM(Document Object Model)
+    - 구현 Tree의 구성 노드의 타입은 HTMLElement 이다. 
+    - Javascript에서 접근하고 조작하게된다.(Document라는 이름으로 )
+ 3. 노드(node)
+    - DOM Tree이 각각의 요소 
+ */
+ 
+ window.addEventListener("load", function(){
+	console.log("loaded");
+	let el = document.getElementById("header-2");
+	console.log(el);
+ });
+</script>
+</head>
+<body>
+	<h1>Step1</h1>
+	<script>alert("Step2")</script>
+	<h1 id="header-2">Step3</h1>
+	<script>alert("Step4")</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- 개발소스버전(서비스 서버 호스팅) -->
+<script type="text/javascript" src="jquery/jquery-3.6.0.js"></script> 
+<!-- 압축버전(서비스 서버 호스팅) -->
+<!-- <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script> --> 
+<!-- 압축버전(CDN) -->
+<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+<script>
+// 1. jQuery는 함수 객체이다.
+// 2. jQuery 함수가 호출되면 object 타입(유사배열)의 객체(jQuery 객체)를 변환한다.
+// 3. $는 jQuery 함수 객체를 참조한다.($는 jQuery 함수 이름은 Alias이다.)
+// 4. jQuery 라이브러리의 정상적인 로딩(import)는 jQuery객체의 jQuery(버전정보)로 확인할 수 있다.
+
+const $obj1 = jQuery();
+console.log(typeof(jQuery), typeof($obj1), $obj1.jquery);
+
+const $obj2 = $();
+console.log(typeof(jQuery), typeof($obj1), $obj1.jquery);
+
+</script>
+
+</head>
+<body>
+	<h1>jQuery 로딩</h1>
+</body>
+</html>
+ 

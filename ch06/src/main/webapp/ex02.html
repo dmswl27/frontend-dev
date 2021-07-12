@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+<script>
+
+// 팝업창
+var child = window.open("", "", "width=200 height=100" );
+
+//현재 모니터의 width및 height구하기
+let widthScreen = screen.width;
+let heightScreen = screen.height;
+
+console.log(widthScreen + ":" + heightScreen);
+setTimeout(function(){
+	child.moveTo(0,0);
+	child.resizeTo(widthScreen, heightScreen);	
+	setTimeout(function(){
+		//1초마다 가운데를 기준으로 사이즈 줄이기
+		child.resizeBy(-20,-20);
+		child.moveBy(10,10);
+	}, 2000);
+}, 2000);
+
+</script>
+</head>
+<body>
+	<h1>BOM (Browser Object Model)</h1>
+    <h2>2. Screen 객체 </h2>
+</body>
+</html>

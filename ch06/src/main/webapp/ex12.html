@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+const registerEventHandler = function(element, eventName, eventHandler){
+	element &&  // element가 널이 아니면 
+	element.attachEvent &&   // <= IE8
+	element.addEventListener('on' +  eventName, eventHandler);
+	
+	element &&                         // element가 null이면
+	element.addEventListener &&       // 
+	element.addEventListener(eventName, eventHandler);
+}
+
+window.addEventListener("load", function(){
+	const h1 = document.getElementById("header");
+	const clickEventHandler1 = function(){
+		console.log("click!");
+	}
+	const clickEventHandler2 = function(){
+		console.log("click2");
+	}
+	// listener 둥록
+	registerEventHandler(h1, "click", clickEventHandler1);
+	
+	// <=IE8 대응
+	registerEventHandler(h1, "click", clickEventHandler2);
+	
+	// Listener 제거
+	h1.removeEventListener("click", clickEventHandler2);
+});
+</script>
+</head>
+<body>
+<h1>DOM Event 처리(&gt;IE8 대응, Cross Broswer)</h1>
+<h1 id ="header">Click!</h1>
+</body>
+</html>

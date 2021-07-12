@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery/jquery-3.6.0.js"></script>
+    <script>
+       $(function(){
+        // 선택자
+            setTimeout(() => {
+                // $("#first, #fourth").css("color","#f00").css("fontSize", "2.0em").css("font-weight", "bold");
+                $("#first, #fourth")
+                .css({
+                    color: "#713423",
+                    fontSize: "2.0em",
+                    fontWeight: "bold"
+                })
+            }, 1000);
+        });
+    </script>
+</head>
+    <body>
+        <h1> 선택자 - 그룹 </h1>
+        <ul>
+            <li id="first"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+            <li id="second"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+            <li id="third"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+            <li id="fourth"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+        </ul>
+ 
+    </body>
+</html>

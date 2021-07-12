@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>sample1</title>
+<link href="image-viewer.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="jquery/jquery-3.6.0.js"></script>
+<script type="text/javascript" src="image-viewer.js"></script>
+<script>
+imageViewer.init();
+/*
+	과제: slideshow 만들기
+	1. btn-sildeshow click event
+	2. event handler:
+		- 2초마다 그림이 바뀌게끔 하는 것
+		  _intervalId = setInterval(function(){....}, 2000);
+		  
+		  clearInterval(_intervalId);
+		  _intervalId = null;
+		  
+		- 버튼 텍스트 변경 '슬라이드쇼 시작' -> '슬라이드쇼 중지'
+		- btn-sildeshow 누르면 슬라이드 쇼가 중지,   '슬라이드쇼 중지' -> '슬라이드쇼 시작'
+ */
+ 
+</script>
+</head>
+<body>
+	<div class="image-viewer">
+		<div class="buttons">
+			<button id="btn-change">이미지변경</button>
+			<button id="btn-sildeshow">슬라이드쇼 시작</button>
+		</div>	
+		<div>
+			<img />
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+        js 이벤트 정류
+        1. 마우스
+        mousedown mouseup click mouse down mouseup click dblclick
+
+        2. 키보드
+        keydown keyup keypress
+        
+        3. from
+           submit
+        
+        4. input
+           focus, blur, change
+        5. fouch
+
+        용어정리
+        1. Event Name : load, click, mousedown, submit, blur
+        2. Event Attribute : DOM Event Model Level0, onload, onclick
+        3. Event Listener : DOM Event Model Level2, function           (AddEventListener로 등록하는거)  
+        4. Event Model : DOM의 HTMLElement의 Event Handler를 설정하는 방법에 대한 표준
+            - DOM Level0 Event Model
+                : Inline
+                    태그안에 onclick ="자바스크립트 코드" 넣는것 x (웹 표준에 어긋남)
+                : Basic(고번적인 이벤트 처리 방식, 기본 이벤트 처리 방식)
+                    element.onclick = function(){...}
+                    문제점은 이벤트 핸들러를 하나밖에 세팅을 못한다.
+            - DOM Level2 Event Model
+               Observer 패턴을 적용하여 Listener(함수, 이벤트핸들러)를 등록하는 방식 
+               Listener를 등록하는 함수/Listener를 제거하는 함수가 있다.
+               다중 이벤트 헨들러를 증록할 수 있다.
+               : MS internet Explorer(<=8)- att
+               : Stendar(표준) - addEventListener/ removeEventListener
+        */
+        
+        window.addEventListener("load", function(){
+        	document.getElementById("header-1").onclick = function(){
+        		console.log("Event Model Level0 - Basic");
+        	}
+        	document.getElementById("header-2").addEventListener("click",function(){
+        		console.log("Event Model Level2");
+        	});
+        });
+    </script>
+</head>
+<body>
+    <h1>DOM Event 처리</h1>
+    <h2 onclick='console.log("Event Model Level0 - Inline");'>Event Model Level0 - Inline</h2>
+    <h2 id="header-1" >Event Model Level0 - Basic</h2>
+    <h2 id="header-2" >Event Model Level2</h2>
+</body>
+</html>

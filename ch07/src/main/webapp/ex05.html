@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery/jquery-3.6.0.js"></script>
+<script>
+	$(function() {
+		// 태그 선택자
+		setTimeout(function(){
+			$("#first").css("color", "#f00");
+			$("#second").css("color", "#f0");
+			$("#third").css("color", "#00f");
+			$("#fourth").css("color", "#36f");			
+			$("li").css("text-decoration", "underline");
+		},2000);
+				
+	});
+</script>
+</head>
+<body>
+	<h1>선택자 - tag</h1>
+	<ul>
+		<li id="first">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li id="second">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li id="third">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+		<li id="fourth">텍스트 텍스트 텍스트 텍스트 텍스트</li>
+	</ul>
+
+</body>
+</html>
